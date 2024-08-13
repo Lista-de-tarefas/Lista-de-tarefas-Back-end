@@ -8,7 +8,7 @@ public class ListaDeTarefasApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ListaDeTarefasApplication.class, args);
-		System.out.println("Hello world!");
+		System.out.println("Hello world");
 	}
 
 }
