@@ -1,6 +1,7 @@
 package com.listadetarefas_backend.lista.de.tarefas.Controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,7 +20,7 @@ public class NewTask {
     public NewTask(NewTaskService newTaskService) {
         this.newTaskService = newTaskService;
     }
-
+    @CrossOrigin(origins = "http://localhost:5173")
     @PostMapping("/newtask")
     public String newTask(@RequestBody Task taskBody) {
         return newTaskService.newTask(

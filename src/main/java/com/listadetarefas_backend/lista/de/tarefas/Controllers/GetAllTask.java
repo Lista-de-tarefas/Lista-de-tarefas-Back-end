@@ -10,15 +10,15 @@ import java.util.List;
 
 @RestController
 public class GetAllTask {
-    private GetAllTask getAllTask;
+    private GetAllTaskService getAllTaskService;
 
     @Autowired
-    public GetAllTask(GetAllTask getAllTask) {
-        this.getAllTask = getAllTask;
+    public GetAllTask(GetAllTaskService getAllTaskService) {
+        this.getAllTaskService = getAllTaskService;
     }
     @GetMapping("/gettask")
     public List<Tasks> getAllTask() {
-        return getAllTask.getAllTask();
+        return getAllTaskService.getAllTask();
     }
 }
 
