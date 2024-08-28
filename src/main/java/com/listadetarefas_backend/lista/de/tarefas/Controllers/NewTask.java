@@ -20,6 +20,7 @@ public class NewTask {
     public NewTask(NewTaskService newTaskService) {
         this.newTaskService = newTaskService;
     }
+
     @CrossOrigin(origins = "http://localhost:5173")
     @PostMapping("/newtask")
     public String newTask(@RequestBody Task taskBody) {

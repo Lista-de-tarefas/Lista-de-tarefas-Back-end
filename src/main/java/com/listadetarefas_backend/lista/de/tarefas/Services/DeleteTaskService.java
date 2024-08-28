@@ -13,11 +13,12 @@ public class DeleteTaskService {
     public DeleteTaskService(TaskRepository taskRepository) {
         this.taskRepository = taskRepository;
     }
-    public String deleteTask(Long id){
+
+    public String deleteTask(Long id) {
         try {
             taskRepository.deleteById(id);
             return "apagado com sucesso!";
-        }catch (Exception e){
+        } catch (Exception e) {
             return "erro ao apagar tarefa";
         }
     }

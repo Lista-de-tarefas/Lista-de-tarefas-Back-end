@@ -33,4 +33,33 @@ public class Tasks {
         this.hour = hour;
         this.color = color;
     }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getTask() {
+        return task;
+    }
+
+
+    public boolean getIsCompleted() {
+        return isCompleted;
+    }
+
+    public void setIsCompleted(boolean isCompleted) {
+        this.isCompleted = isCompleted;
+    }
+
+    public LocalDate getYear() {
+        return year;
+    }
+
+    public LocalTime getHour() {
+        return hour;
+    }
+
+    public String getColor() {
+        return color;
+    }
 }
