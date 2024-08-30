@@ -21,7 +21,7 @@ public class NewTask {
         this.newTaskService = newTaskService;
     }
 
-    @CrossOrigin(origins = "http://localhost:5173")
+    @CrossOrigin(origins = "https://listadetarefa1.vercel.app")
     @PostMapping("/newtask")
     public String newTask(@RequestBody Task taskBody) {
         return newTaskService.newTask(
