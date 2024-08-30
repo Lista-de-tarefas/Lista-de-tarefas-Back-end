@@ -17,7 +17,7 @@ public class MarkTask {
         this.markTaskService = markTaskService;
     }
 
-    @CrossOrigin(origins = "https://list-ashen-zeta.vercel.app")
+    @CrossOrigin(origins = "https://list-beige-delta.vercel.app")
     @PatchMapping("/mark-task/{id}")
     public String markTask(@PathVariable("id") long id) {
         return markTaskService.markTask(id);

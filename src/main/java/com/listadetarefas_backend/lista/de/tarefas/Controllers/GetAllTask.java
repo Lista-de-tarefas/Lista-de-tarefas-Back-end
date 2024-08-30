@@ -18,7 +18,7 @@ public class GetAllTask {
         this.getAllTaskService = getAllTaskService;
     }
 
-    @CrossOrigin(origins = "https://list-ashen-zeta.vercel.app")
+    @CrossOrigin(origins = "https://list-beige-delta.vercel.app")
     @GetMapping("/gettask")
     public List<Tasks> getAllTask() {
         return getAllTaskService.getAllTask();
