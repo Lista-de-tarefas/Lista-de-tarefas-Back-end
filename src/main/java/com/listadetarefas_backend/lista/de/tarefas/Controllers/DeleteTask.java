@@ -17,7 +17,7 @@ public class DeleteTask {
         this.deleteTaskService = deleteTaskService;
     }
 
-    @CrossOrigin(origins = "https://listadetarefa1.vercel.app")
+    @CrossOrigin(origins = "https://list-ashen-zeta.vercel.app")
     @DeleteMapping("/delete/{id}")
     public String deleteTask(@PathVariable("id") Long id) {
         return deleteTaskService.deleteTask(id);
